@@ -1,0 +1,29 @@
+
+#home:hover{
+transform:scale(1.2);
+color:red;
+}
+#aboutus:hover{
+    transform:scale(1.2);
+color:red;
+
+}
+#contactus:hover{
+    transform:scale(1.2);
+color:red; 
+}
+    .logo {
+        display: inline;
+    }
+
+    .aboutus {
+        width: 100vw;
+        background: black;
+
+    }
+    #signinbtn:hover{
+        transform:scale(1.2);
+    }
+    #signupbtn:hover{
+        transform:scale(1.2);
+     }

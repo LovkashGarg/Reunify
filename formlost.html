@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Form</title>
+</head>
+<Style>
+    *{
+        background-color: black;
+        color:white;
+        font-size:34px;
+    }
+.form{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.form input{
+    margin:20px;
+}
+#Description{
+    display: inline;
+    font-size: 20px;
+    padding-top:0px;
+    margin-top:20px;
+    height:100px;
+    width:500px;
+    overflow-wrap: normal;
+}
+.Descriptionlabel{
+padding:0px;
+margin:0px;
+}
+h1{
+    font-size:50px;
+    color:white;
+}
+/* .imageupload input{
+    display: none;
+} */
+/* .imageupload label{
+    height:300px;
+    border:red 3px dashed;
+    width:150px;
+} */
+</Style>
+<body>
+    
+    <div class="form">
+    <h1>Lost Form</h1>
+    <form action="/formlost" method="post">
+        <div>
+            <label for="Name">Name :</label>
+            <input type="text" name="Name"id="name">
+        </div>
+        <div>
+            <label for="Mobileno">Mobile no. :</label>
+            <input type="number" name="Mobileno"id="Mobileno">
+        </div>
+        <div>
+            <label for="Name">Email :</label>
+            <input type="email" name="email"id="email">
+        </div>
+          
+        <div>
+            <label for="age">Are you 18+:</label>
+            <input type="checkbox" id="age">
+        </div>
+        <div>
+            <label for="Name">Gender :  </label>  Male<input type="radio" name="MyGender">FeMale<input type="radio"  name="MyGender"> Other<input type="radio" name="MyGender">
+        </div>
+        <div>
+            <label for="Description" class="Descriptionlabel">Description :</label>
+            <input type="text" id="Description">
+        </div>
+        <div class="imageupload">
+            <label for="Lost-item-images" class="Lost-item-images">Upload image :</label>
+            <input type="file" id="Lost-item-images" multiple onchange="readURL" accept="Image/*">
+        </div>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    .containerlost{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        /* margin: 100px; */
+        background-color: black;
+    }
+
+    .box1 {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box1 img {
+        height: 500px;
+        width: 40%;
+    }
+
+    /* * {
+        background-color: black;
+        font-family: 'pacifo', cursive;
+    } */
+
+    .buttons button{
+        width: 180px;
+        height: 80px;
+        border-radius:10px;
+        /* border: 4px solid white; */
+        font-weight: bolder;
+        font-size: 30px;
+        margin: 40px;
+        padding: 20px;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+    }
+    button .lost {
+        margin-left: 50px;
+    }
+    li span {
+        color: white;
+        font-size: 46px;
+        font-weight: 400;
+    }
+
+    .wrapper .dynamic-texts {
+        margin-left: 45px;
+        height: 70px;
+        overflow: hidden;
+        line-height: 60px;
+        overflow: hidden;
+    }
+
+    .dynamic-texts li {
+        margin-bottom: 15px;
+        color: WHITE;
+        position: relative;
+        top: 0px;
+        font-size: 60px;
+        animation: slide 7.5s steps(3) infinite;
+        list-style: none;
+    }
+
+    @keyframes slide {
+        100% {
+            top: -270px;
+        }
+    }
+
+    .dynamic-texts li span {
+        position: relative;
+    }
+
+    .dynamic-texts li span:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: black;
+        border-left: 2px solid rgb(179, 5, 5);
+        animation: typing 2.5s steps(23) infinite;
+    }
+
+    @keyframes typing {
+        100% {
+            left: 100%;
+            margin: 0 -35px 0 35px;
+        }
+    }
+
+    nav {
+        width: 100%;
+        background-color: white;
+    }
+
+    .world {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .world img {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .description {
+        margin:40px;
+        color:white;
+    }
+
+    .home {
+        background: white;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    #home:hover {
+        transform: scale(1.2);
+        color: red;
+    }
+
+    #aboutus:hover {
+        transform: scale(1.2);
+        color: red;
+
+    }
+
+    #contactus:hover {
+        transform: scale(1.2);
+        color: red;
+    }
+
+    .logo {
+        display: inline;
+    }
+
+    .aboutus {
+        width: 100vw;
+        background: black;
+
+    }
+
+    #signinbtn:hover {
+        transform: scale(1.2);
+    }
+
+    #signupbtn:hover {
+        transform: scale(1.2);
+    }
+    .aboutus span {
+    font-size: 50px;
+    font-weight: bolder;
+}
+.aboutus p{
+    padding:20px;
+    padding-bottom:0px;
+    font-family:'pacifo',cursive;
+}
+#aboutusbookmark{
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    font-size:20px;
+}
+/* hr { */
+    /* justify-self: center; */
+    /* margin:0px 20%;
+    height: 4px;
+    width: 60%;
+    background-color:white; */
+/* } */
+
+#aboutustitle {
+    color:rgb(7, 1, 1);
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    border-bottom:red 4px solid;
+}
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-primary">
+        <div class="container-fluid mx-4">
+            <a class="navbar-brand" href="#"><img
+                    src="https://see.fontimg.com/api/renderfont4/EamrW/eyJyIjoiZnMiLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/UmV1bmlmeQ/easter-rabbits.png"
+                    alt="REunify" width="350px" height="80px" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-lg" aria-current="page" href="#"
+                            style="font-size:25px; font-weight:bolder;font-family:'pacifo',cursive ;border-bottom:4px solid black;cursor:pointer"
+                            id="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/#aboutusbookmark"
+                            style="font-size:25px; font-weight:bolder;font-family:'pacifo',cursive;border-bottom:4px solid black;cursor: pointer;"
+                            id="aboutus">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="#"
+                            style="font-size:25px; font-weight:bolder;font-family:'pacifo',cursive;border-bottom:4px solid black"
+                            id="contactus">Contact us</a>
+                    </li>
+                    <div class="dropdown text-center">
+                        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            style="font-size:25px; font-weight:bolder;font-family:'pacifo',cursive;border-bottom:4px solid black">
+                            Services
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Team members</a>
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Our partners</a>
+                        </div>
+                    </div>
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+                <button class="btn btn-outline-success bg-danger text-white mx-3" id="signinbtn">Sign In</button>
+                <button class="btn btn-outline-success bg-danger text-white mx-4" id="signupbtn">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+    <!-- <object data="index.html" class="home"></object> -->
+    <!-- <object data="aboutus.html" class="aboutus"></object> -->
+
+    <div class="containerlost">
+        <div class="box1">
+            <!-- <img src="lost and found.png" alt="lostandfound"> -->
+            <div class="wrapper">
+                <div class="dynamic-texts">
+                    <li><span>Pareshan ho!!</span></li>
+                    <li><span>Sahi Jagah pe aaye!!</span></li>
+                    <li><span>Welcome TO Reunify</span></li>
+                </div>
+                <div class="description">
+                    Renunify, where technology meets empathy to reunite you with your lost items. 
+                    We are a dynamic team of innovators on a mission to revolutionize the way people recover their cherished belongings, 
+                    whether they're lost during travel or in the hustle and bustle of everyday life
+
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="lostbtn">
+                    LOST
+                </button>
+                <button id="foundbtn">
+                    FOUND
+                </button>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="world">
+                <img src="world.gif" alt="world" style="width:680px;height:480px;">
+            </div>
+        </div>
+    </div>
+    <!-- <hr> -->
+    <div id="aboutusbookmark" class="aboutus">
+    <h1 id="aboutustitle">About us</h1>
+    <p> <span class="headlineaboutus">Reunify </span>, where technology meets empathy to reunite you with your lost items. We are a passionate team dedicated to transforming the way
+         people recover their belongings, whether lost during travel or in everyday life.
+        At Reunify, we believe in the power of innovation and <b>human kindness</b>. Our platform seamlessly connects individuals who have lost their items with those who have
+         found them, eliminating the frustrations of disconnection. We combine cutting-edge technologies, including Artificial Intelligence (AI) and real-time location tracking,
+         with a user-centric approach that prioritizes privacy and security.
+         <b>Our mission</b> is to not only return lost items but also to restore your faith in the goodwill of others. We're not just a platform; we're a <b>community-driven initiative</b>. Join us in making the world a more connected and caring place, one lost item at a time.
+        Experience the future of lost item reunification with Reunify. Together, we're redefining the way.Reunify is a public based platform where you can find your belongings and post things you find which could help a person to reach .We partnership with the
+         government and our idea is to safely and with <b>>proper authorization</b> the item should reach its actual owner .
+         What sets us apart is our unwavering commitment to leveraging advanced technologies, including state-of-the-art<b>Artificial Intelligence (AI) and real-time location tracking</b> . These innovations enhance the accuracy, ensuring swift reunifications. But we don't stop there.
+        </p>
+        <p><b>Privacy and security </b>are at the core of our platform.  We empower users with robust privacy controls, enabling them to manage the visibility of their contact information and personal details.
+       Our secure and anonymous communication channels facilitate respectful interactions while safeguarding sensitive information.  
+        More than just a platform,<b>Reunify</b> is a thriving <b>community </b>united by the spirit of goodwill. User feedback and ratings add transparency and trust to the reunification process, turning strangers into helpers and friends.
+        With an unwavering commitment to continuous innovation, we stay ahead of the curve in a rapidly evolving tech landscape. We're dedicated to providing you with the best tools and resources to recover what matters most.
+        Discover the future of lost item reunification with Reunify. Join us in redefining the way we recover and reconnect with the items we hold dear. Together, we're writing a new chapter in the story of <b>compassion, technology, and community.</b>
+    </p>
+    </div>
+    <div class="footer">
+        <div class="footer1"> <span>Reunify</span>
+           <p>Reunify is a public based platform where you can find your belongings and post you find which could help a person to
+        </p> 
+        </div>
+        <div class="footer2">
+            <span>Address</span>
+            <br><br>
+            <div>office
+            4671 Ambegaon Road,
+             Pune, Maharashtra,
+              411041</div>
+            <div>
+            aggarwallovkesh555@gmail.com
+        </div>
+        <div>
+            +919896316033
+        </div></div>
+        <div class="footer3"><span>Links</span>
+           <div> HOME</div>
+           <div> ABOUT US</div>
+           <div> GALLARY</div>
+           <div> CONTACT US</div></div>
+        <div class="footer4">
+           <div><span>Follow us</span></div>
+        <br><br>
+            <i class="fab fa-twitter fa-xl"></i>
+             <i class="fab fa-facebook-f fa-xl"></i>
+             <i class="fab fa-instagram fa-xl"></i>
+             <i class="fab fa-google-plus-square fa-xl"></i>
+            
+        </div>
+    </div>
+    <script src="navbar.js"></script>
+    <script src="scripthome.js"></script>
+</body>
+
+</html>

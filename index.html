@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Reunify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&family=Pacifico&family=Poppins:wght@700&family=Ubuntu:ital@1&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img
+                    src="https://see.fontimg.com/api/renderfont4/EamrW/eyJyIjoiZnMiLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/UmV1bmlmeQ/easter-rabbits.png"
+                    alt="REunify" width="350px" height="80px" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-lg" aria-current="page" href="lost_found.html"
+                            style="font-size:25px; font-weight:bolder;font-family:'pacifo',cursive ;border-bottom:4px solid black;cursor:pointer" id="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="/#aboutusbookmark" style="font-size:25px; font-weight:bolder;font-family:'pacifo',cursive;border-bottom:4px solid black;cursor: pointer;" id="aboutus">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="#"
+                            style="font-size:25px; font-weight:bolder;font-family:'pacifo',cursive;border-bottom:4px solid black" id="contactus">Contact us</a>
+                    </li>
+                    <div class="dropdown text-center">
+                        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size:25px; font-weight:bolder;font-family:'pacifo',cursive;border-bottom:4px solid black">
+                          Services
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Team members</a>
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Our partners</a>
+                        </div>
+                      </div>
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+                <button class="btn btn-outline-success bg-danger text-white mx-3" id="signinbtn" >Sign In</button>
+                <button class="btn btn-outline-success bg-danger text-white mx-4" id="signupbtn" >Sign Up</button>
+            </div>
+        </div>
+    </nav>
+    <!-- <object data="index.html" class="home"></object> -->
+    <!-- <object data="aboutus.html" class="aboutus"></object> -->
+    
+    <hr>
+    <div class="containersignin_signup">
+        <div class="social-container">
+            <div class="form-container1">
+                <form action="#">
+                    <h1 class="change">SIGN IN</h1>
+                    <a href="#" class="social"><img src="images.png" alt="facebook-logo" class="social1"></a>
+                    <a href="#" class="social"><img src="download.jpg" alt="google-logo" class="social2"></a>
+                    <a href="#" class="social"><img src="download.png" alt="linked-inlogo" class="social3"></a>
+                    <br>
+                    <span>or use your account</span><br>
+                    <div>
+                        <label for="Email"></label>
+                        <input type="email"  placeholder="Email" id="email">
+                    </div>
+                    <div>
+                        <label for="Password"></label>
+                        <input type="password" placeholder="Password" id="password">
+                    </div>
+                  
+                    <div> <a href="#" class="Forgetpassword">FORGET PASSWORD?</a></div>
+                    <button class="signbtn change">Sign IN</button>
+                    <div class="center"><h6 class="change">Don't have a Account ?</h6><button id="Transformation">Create account</button></div>
+                </form>
+            </div>
+            <div class="form-container2">
+                <form action="#">
+                    <h1>Create account</h1>
+                    <a href="#" class="social"><img src="images.png" alt="facebook-logo" class="social1"></a>
+                    <a href="#" class="social"><img src="download.jpg" alt="google-logo" class="social2"></a>
+                    <a href="#" class="social"><img src="download.png" alt="linked-inlogo" class="social3"></a>
+                    <br>
+                    <span>or use your email for registration</span><br>
+                    <div>
+                        <label for="Name">Name :</label>
+                        <input type="Name" placeholder="UserName" id="Name">
+                    </div>
+                    <div>
+                        <label for="Email">Email :</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div>
+                        <label for="Password">Password :</label>
+                        <input type="password" placeholder="Password" id="password">
+                    </div>
+                  
+                    <button class="signbtn change">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <div class="world">
+            <img src="world.gif"alt="world" style="width:680px;height:480px;">
+        </div>
+    </div>
+    <hr>
+    <div id="aboutusbookmark" class="aboutus">
+    <h1 id="aboutustitle">About us</h1>
+    <p> <span class="headlineaboutus">Reunify </span>, where technology meets empathy to reunite you with your lost items. We are a passionate team dedicated to transforming the way people recover their belongings, whether lost during travel or in everyday life.
+        At Reunify, we believe in the power of innovation and human kindness. Our platform seamlessly connects individuals who have lost their items with those who have found them, eliminating the frustrations of disconnection. We combine cutting-edge technologies, including Artificial Intelligence (AI) and real-time location tracking, with a user-centric approach that prioritizes privacy and security.
+        Our mission is to not only return lost items but also to restore your faith in the goodwill of others. We're not just a platform; we're a community-driven initiative. Join us in making the world a more connected and caring place, one lost item at a time.
+        Experience the future of lost item reunification with [Your Website Name]. Together, we're redefining the way we reclaim what's most important to us.Reunify is a public based platform where you can find your belongings and post things you find which could help a person to reach .We partnership with the g
+        overnment and our idea is to safely and with proper authorization the item should reach its actual owner .
+        What sets us apart is our unwavering commitment to leveraging advanced technologies, including state-of-the-art Artificial Intelligence (AI) and real-time location tracking. These innovations enhance the accuracy and efficiency of matching lost and found items, ensuring swift reunifications. But we don't stop there.
+        <!-- Privacy and security are at the core of our platform. We empower users with robust privacy controls, enabling them to manage the visibility of their contact information and personal details. Our secure and anonymous communication channels facilitate respectful interactions while safeguarding sensitive information.  
+        More than just a platform, [Your Website Name] is a thriving community united by the spirit of goodwill. User feedback and ratings add transparency and trust to the reunification process, turning strangers into helpers and friends.
+        With an unwavering commitment to continuous innovation, we stay ahead of the curve in a rapidly evolving tech landscape. We're dedicated to providing you with the best tools and resources to recover what matters most.
+        Discover the future of lost item reunification with [Your Website Name]. Join us in redefining the way we recover and reconnect with the items we hold dear. Together, we're writing a new chapter in the story of compassion, technology, and community.-->
+    </p> 
+
+    </div>
+        <div class="footer">
+            <div class="footer1"> <span>Reunify</span>
+               <p>Reunify is a public based platform where you can find your belongings and post you find which could help a person to
+            </p> 
+            </div>
+            <div class="footer2">
+                <span>Address</span>
+                <br><br>
+                <div>office
+                4671 Ambegaon Road,
+                 Pune, Maharashtra,
+                  411041</div>
+                <div>
+                aggarwallovkesh555@gmail.com
+            </div>
+            <div>
+                +919896316033
+            </div></div>
+            <div class="footer3"><span>Links</span>
+               <div> HOME</div>
+               <div> ABOUT US</div>
+               <div> GALLARY</div>
+               <div> CONTACT US</div></div>
+            <div class="footer4">
+               <div><span>Follow us</span></div>
+            <br><br>
+                <i class="fab fa-twitter fa-xl"></i>
+                 <i class="fab fa-facebook-f fa-xl"></i>
+                 <i class="fab fa-instagram fa-xl"></i>
+                 <i class="fab fa-google-plus-square fa-xl"></i>
+                
+            </div>
+        </div>
+    <script src="script.js"></script>
+    <script src="navbar.js"></script>
+</body>
+
+</html>
